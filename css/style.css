@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header - navbar */
+nav {
+    display: flex;
+    padding: 40px 0 40px 0;
+    background-color: rgb(250, 250, 250);
+}
+
+.title, .services {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.title-name{
+    align-self: center;
+    margin: auto;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.services-list {
+    list-style: none;
+    display: flex;
+    width: 100%;
+
+}
+
+.services-list li {
+    width: 100%;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+    gap: 30px;
+}
+
+.services-list li:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+/* main */
+.container {
+    background-image: url("../img/background_image.png");
+    height: 700px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    height: 25%;
+    width: 70%;
+}
+
+.button-container{
+    display: flex;
+    margin-top: 3rem;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    
+}
+
+button{
+    margin: auto;
+    margin-bottom: 1em;
+    padding: .9rem;
+    border-radius: .4rem;
+} 
+
+button > a {
+    text-decoration: none;
+}
+
+/* main form */
+.form-container {
+    background-color: rgb(73, 181, 194);
+    height: 500px;
+    color: white;
+    font-weight: bold;
+}
+
+.big-form {
+    margin: auto;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-title {
+    width: 100%;
+}
+
+.input-text {
+    padding: 15px 100px 15px 100px;
+    border-radius: .3em;
+}
+
+.form-bottom {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+/* footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.938);
+    color: white;
+    display: flex;
+}
+
+.footer-list {
+    width: 100%;
+}
+
+.footer-list > ul {
+    width: 100%;
+}
+
+.footer-list > ul >li {
+    list-style: none;
+}
